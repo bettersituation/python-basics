@@ -23,6 +23,7 @@ def pool_calc(process_num, iter_list):
         pool.close()
         pool.join()
 
-print("cpu num:", os.cpu_count())
-for n in range(1, 9):
-    pool_calc(n, iter_list)
+if __name__ == '__main__':
+    print("cpu num:", os.cpu_count())
+    for n in range(1, 9):
+        pool_calc(n, iter_list)
