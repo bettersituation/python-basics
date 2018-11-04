@@ -1,5 +1,5 @@
 # python-basics
-## 1. multiprocessing(병렬처리)
+### 1. multiprocessing(병렬처리)
 ##### &ensp;&ensp;&ensp;&ensp; - Pool
 ##### &ensp;&ensp;&ensp;&ensp; - Process
 ##### &ensp;&ensp;&ensp;&ensp; - Pipe
