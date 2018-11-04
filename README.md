@@ -4,8 +4,9 @@
 ##### &ensp;&ensp;&ensp;&ensp; - Process
 ##### &ensp;&ensp;&ensp;&ensp; - Pipe
 ##### &ensp;&ensp;&ensp;&ensp; - Queue
-##### &ensp;&ensp;&ensp;&ensp; - Evenet
+##### &ensp;&ensp;&ensp;&ensp; - Event
 ##### &ensp;&ensp;&ensp;&ensp; - Lock
 ##### &ensp;&ensp;&ensp;&ensp; - Value
 ##### &ensp;&ensp;&ensp;&ensp; - Array
-##### &ensp;&ensp;&ensp;&ensp; - LIFO Qeue
+##### &ensp;&ensp;&ensp;&ensp; - Manger
+##### &ensp;&ensp;&ensp;&ensp; - LIFO Queue

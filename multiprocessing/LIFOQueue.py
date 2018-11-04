@@ -1,47 +1,30 @@
-from multiprocessing import Process
 from multiprocessing.managers import BaseManager
-from time import sleep
+from multiprocessing import Process
 from queue import LifoQueue
 
 
-def run(lifo):
-    """Wait for three messages and print them out"""
-    num_msgs = 0
-    while num_msgs < 3:
-        # get next message or wait until one is available
-        s = lifo.get()
-        print(s)
-        num_msgs += 1
+class LifoQueueManager(BaseManager):
+
+    def __init__(self):
+        super().__init__()
+        self.register("LifoQueue", LifoQueue)
 
 
-# create manager that knows how to create and manage LifoQueues
-class MyManager(BaseManager):
-    pass
-MyManager.register('LifoQueue', LifoQueue)
+def get_data(queue):
+    while not queue.empty():
+        print(queue.get())
 
 
 if __name__ == "__main__":
 
-    manager = MyManager()
+    manager = LifoQueueManager()
     manager.start()
-    lifo = manager.LifoQueue()
-    lifo.put("first")
-    lifo.put("second")
+    queue = manager.LifoQueue()
 
-    # expected order is "second", "first", "third"
-    p = Process(target=run, args=[lifo])
+    queue.put("1")
+    queue.put("2")
+    queue.put("3")
+
+    p = Process(target=get_data, args=(queue, ))
     p.start()
-
-    # wait for lifoqueue to be emptied
-    sleep(0.25)
-    lifo.put("third")
-
     p.join()
-
-    q =LifoQueue()
-    q.put('a')
-    q.put('b')
-    q.put('c')
-    print(q.get())
-    print(q.get())
-    print(q.get())
