@@ -10,3 +10,10 @@
 ##### &ensp;&ensp;&ensp;&ensp; - Array
 ##### &ensp;&ensp;&ensp;&ensp; - Manger
 ##### &ensp;&ensp;&ensp;&ensp; - LIFO Queue
+
+### 2. class
+##### &ensp;&ensp;&ensp;&ensp; - Property
+##### &ensp;&ensp;&ensp;&ensp; - Classmethod
+##### &ensp;&ensp;&ensp;&ensp; - Staticmethod
+##### &ensp;&ensp;&ensp;&ensp; - __call__
+##### &ensp;&ensp;&ensp;&ensp; - __new__
