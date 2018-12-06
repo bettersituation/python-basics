@@ -19,4 +19,4 @@
 ##### &ensp;&ensp;&ensp;&ensp; - __new__
 
 ### 3.decorator(@)
-##### &ensp;&ensp;&ensp;&ensp; - decorator
+##### &ensp;&ensp;&ensp;&ensp; - decorator(@)
