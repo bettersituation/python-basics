@@ -17,3 +17,6 @@
 ##### &ensp;&ensp;&ensp;&ensp; - Staticmethod
 ##### &ensp;&ensp;&ensp;&ensp; - __call__
 ##### &ensp;&ensp;&ensp;&ensp; - __new__
+
+### 3.decorator(@)
+##### &ensp;&ensp;&ensp;&ensp; - decorator
